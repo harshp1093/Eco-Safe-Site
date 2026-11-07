@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harsh — Designer & Content Creator</title>
+  <meta name="description" content="Personal site of Harsh — graphic design, digital content and marketing.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Loaded in <head> (no defer) so the saved theme applies before the page paints -->
+  <script src="script.js"></script>
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="logo">Harsh<span>.</span></a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero container">
+      <p class="eyebrow reveal">Hello, I'm</p>
+      <h1 class="reveal">Harsh — I make brands <span class="accent">look sharp</span>.</h1>
+      <p class="lead reveal">Graphic designer and digital content creator focused on marketing visuals, social campaigns and product promotion.</p>
+      <div class="hero-actions reveal">
+        <a href="#work" class="btn btn-primary">See my work</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section container">
+      <h2 class="reveal">About</h2>
+      <div class="about-grid">
+        <p class="reveal">I design and produce content end to end — from campaign concepts to finished social posts, product visuals and promotional material. I care about clean layouts, bold typography and work that actually sells.</p>
+        <ul class="skills reveal">
+          <li>Graphic Design</li>
+          <li>Social Media Content</li>
+          <li>Product Promotion</li>
+          <li>Brand Identity</li>
+          <li>Video & Motion</li>
+          <li>Marketing Campaigns</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section id="work" class="section container">
+      <h2 class="reveal">Selected Work</h2>
+      <div class="cards">
+        <article class="card reveal">
+          <div class="card-thumb thumb-1"></div>
+          <h3>Product Campaign</h3>
+          <p>Launch visuals and social series for a new tool line.</p>
+          <a href="#" class="card-link">View project →</a>
+        </article>
+        <article class="card reveal">
+          <div class="card-thumb thumb-2"></div>
+          <h3>Social Media Kit</h3>
+          <p>Reusable templates that kept a brand's feed consistent.</p>
+          <a href="#" class="card-link">View project →</a>
+        </article>
+        <article class="card reveal">
+          <div class="card-thumb thumb-3"></div>
+          <h3>Promo Video</h3>
+          <p>Short-form motion piece for a seasonal promotion.</p>
+          <a href="#" class="card-link">View project →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section container contact">
+      <h2 class="reveal">Let's work together</h2>
+      <p class="lead reveal">Have a project in mind? I'd love to hear about it.</p>
+      <a href="mailto:you@example.com" class="btn btn-primary reveal">you@example.com</a>
+      <div class="socials reveal">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="Behance">Behance</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Harsh. Built with care on GitHub Pages.</p>
+    </div>
+  </footer>
+</body>
+</html>
